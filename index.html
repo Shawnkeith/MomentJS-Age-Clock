@@ -21,7 +21,13 @@
       Use moment() to create a new moment object from the present time
       Fix this function to display someone's exact age
       */
-      document.querySelector('.countdown').innerHTML = moment()
+    //  let y = moment.duration();
+    //  let x = moment.duration(prompt());
+    //  console.log(x)
+     let result = moment.preciseDiff(moment(window.birthday),
+     moment())
+    //  console.log(y)
+      document.querySelector('.countdown').innerHTML = result
     }
   </script>
 </body>
